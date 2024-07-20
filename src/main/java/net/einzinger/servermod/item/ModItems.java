@@ -13,19 +13,19 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ServerMod.MOD_ID);
 
     public static final RegistryObject<Item> EMERALD_BALL = ITEMS.register("emerald_ball",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.SERVER_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SERVER_TAB)));
 
     public static final RegistryObject<Item> BLUEBERRY = ITEMS.register("blueberry",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.SERVER_TAB).food(ModFoods.BLUEBERRY)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SERVER_TAB).food(ModFoods.BLUEBERRY)));
 
     public static final RegistryObject<Item> ZINC_INGOT = ITEMS.register("zinc_ingot",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.SERVER_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SERVER_TAB)));
 
     public static final RegistryObject<Item> RAW_ZINC = ITEMS.register("raw_zinc",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.SERVER_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SERVER_TAB)));
 
     public static final RegistryObject<Item> DICE = ITEMS.register("dice",
-            () -> new DiceItem(new Item.Properties().tab(ModCreativeModTab.SERVER_TAB).stacksTo(1)));
+            () -> new DiceItem(new Item.Properties().tab(ModCreativeModeTab.SERVER_TAB).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus){
