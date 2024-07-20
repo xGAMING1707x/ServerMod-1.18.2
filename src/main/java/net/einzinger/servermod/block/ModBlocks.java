@@ -1,6 +1,7 @@
 package net.einzinger.servermod.block;
 
 import net.einzinger.servermod.ServerMod;
+import net.einzinger.servermod.block.custom.BlueBerryCropBlock;
 import net.einzinger.servermod.block.custom.ZincLampBlock;
 import net.einzinger.servermod.item.ModCreativeModeTab;
 import net.einzinger.servermod.item.ModItems;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -58,6 +60,8 @@ public class ModBlocks {
                     .lightLevel(state -> state.getValue(ZincLampBlock.LIT) ? 15 : 0)),
             ModCreativeModeTab.SERVER_TAB);
 
+    public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop",
+            () -> new BlueBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
 

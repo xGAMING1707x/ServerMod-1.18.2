@@ -4,6 +4,7 @@
   "item.servermod.zinc_ingot": "Zinkbarren",
   "item.servermod.raw_zinc": "Rohzink",
   "item.servermod.dice": "Würfel",
+  "item.servermod.blueberry_seeds": "Blaubeersamen",
 
   "block.servermod.zinc_block": "Zinkblock",
   "block.servermod.zinc_ore": "Zinkerz",
@@ -11,6 +12,7 @@
   "block.servermod.netherrack_zinc_ore": "Netherzinkerz",
   "block.servermod.end_zinc_ore": "Endzinkerz",
   "block.servermod.zinc_lamp": "Zinklampe",
+  "block.servermod.blueberry_crop": "Blaubeerpflanze",
 
   "itemGroup.servertab": "Server Mod",
 
