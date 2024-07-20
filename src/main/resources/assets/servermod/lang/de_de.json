@@ -1,0 +1,21 @@
+{
+  "item.servermod.emerald_ball": "Smaragd Ball",
+  "item.servermod.blueberry": "Blaubeere",
+  "item.servermod.zinc_ingot": "Zinkbarren",
+  "item.servermod.raw_zinc": "Rohzink",
+  "item.servermod.dice": "Würfel",
+
+  "block.servermod.zinc_block": "Zinkblock",
+  "block.servermod.zinc_ore": "Zinkerz",
+  "block.servermod.deepslate_zinc_ore": "Tiefenschiefer-Zinkerz",
+  "block.servermod.netherrack_zinc_ore": "Netherzinkerz",
+  "block.servermod.end_zinc_ore": "Endzinkerz",
+  "block.servermod.zinc_lamp": "Zinklampe",
+
+  "itemGroup.servertab": "Server Mod",
+
+  "tooltip_shift": "SHIFT drücken, um mehr Infos zu erhalten",
+  "tooltip_dice": "Rechtsklicken, um eine zufällige Zahl zu erhalten!",
+
+  "dice_chatMessage": "Du hast gewürfelt: "
+}
