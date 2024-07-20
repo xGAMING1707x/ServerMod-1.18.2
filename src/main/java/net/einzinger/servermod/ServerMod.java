@@ -1,6 +1,8 @@
 package net.einzinger.servermod;
 
 import com.mojang.logging.LogUtils;
+import net.einzinger.servermod.block.ModBlocks;
+import net.einzinger.servermod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,9 +23,13 @@ public class ServerMod
     public static final String MOD_ID = "servermod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+
     public ServerMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
