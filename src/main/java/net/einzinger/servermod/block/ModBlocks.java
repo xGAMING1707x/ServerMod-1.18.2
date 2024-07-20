@@ -2,7 +2,7 @@ package net.einzinger.servermod.block;
 
 import net.einzinger.servermod.ServerMod;
 import net.einzinger.servermod.block.custom.ZincLampBlock;
-import net.einzinger.servermod.item.ModCreativeModTab;
+import net.einzinger.servermod.item.ModCreativeModeTab;
 import net.einzinger.servermod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -26,37 +26,37 @@ public class ModBlocks {
     public static final RegistryObject<Block> ZINC_BLOCK = registerBlock("zinc_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()),
-                    ModCreativeModTab.SERVER_TAB);
+                    ModCreativeModeTab.SERVER_TAB);
 
     public static final RegistryObject<Block> ZINC_ORE = registerBlock("zinc_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)),
-                    ModCreativeModTab.SERVER_TAB);
+                    ModCreativeModeTab.SERVER_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_ZINC_ORE = registerBlock("deepslate_zinc_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)),
-            ModCreativeModTab.SERVER_TAB);
+            ModCreativeModeTab.SERVER_TAB);
 
     public static final RegistryObject<Block> NETHERRACK_ZINC_ORE = registerBlock("netherrack_zinc_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)),
-            ModCreativeModTab.SERVER_TAB);
+            ModCreativeModeTab.SERVER_TAB);
 
     public static final RegistryObject<Block> END_ZINC_ORE = registerBlock("end_zinc_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)),
-            ModCreativeModTab.SERVER_TAB);
+            ModCreativeModeTab.SERVER_TAB);
 
     public static final RegistryObject<Block> ZINC_LAMP = registerBlock("zinc_lamp",
             () -> new ZincLampBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(2f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(ZincLampBlock.LIT) ? 15 : 0)),
-            ModCreativeModTab.SERVER_TAB);
+            ModCreativeModeTab.SERVER_TAB);
 
 
 
