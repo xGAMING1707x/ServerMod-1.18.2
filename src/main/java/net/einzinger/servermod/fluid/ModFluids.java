@@ -18,7 +18,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.awt.*;
-import java.util.HexFormat;
 
 public class ModFluids {
     public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("block/water_still");
