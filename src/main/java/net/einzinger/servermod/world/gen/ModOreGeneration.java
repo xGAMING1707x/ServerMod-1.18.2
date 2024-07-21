@@ -14,5 +14,7 @@ public class ModOreGeneration {
                 event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
 
         base.add(ModPlacedFeatures.ZINC_ORE_PLACED);
+        base.add(ModPlacedFeatures.NETHER_ZINC_ORE_PLACED);
+        base.add(ModPlacedFeatures.END_ORE_PLACED);
     }
 }
