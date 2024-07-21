@@ -2,7 +2,9 @@ package net.einzinger.servermod.item;
 
 import net.einzinger.servermod.ServerMod;
 import net.einzinger.servermod.block.ModBlocks;
+import net.einzinger.servermod.fluid.ModFluids;
 import net.einzinger.servermod.item.custom.DiceItem;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,6 +34,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> DICE = ITEMS.register("dice",
             () -> new DiceItem(new Item.Properties().tab(ModCreativeModeTab.SERVER_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> HONEY_BUCKET = ITEMS.register("honey_bucket",
+            () -> new BucketItem(ModFluids.HONEY_FLUID,
+                    new Item.Properties().tab(ModCreativeModeTab.SERVER_TAB).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus){
